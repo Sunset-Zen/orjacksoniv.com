@@ -2,24 +2,27 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import HomePage from "./pages/home/HomePage";
+import AboutPage from "./pages/about/Aboutpage";
+import ProjectPage from "./pages/project/Projectpage";
+import ExpPage from "./pages/experience/Exppage";
 import "./App.css";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
+  // Attributes || Hook(s)
   const [count, setCount] = useState(0);
-
+  // JSX
   return (
     <>
       <Router>
         <div>
-          {/* navbar */}
           <div>
             <Routes>
               <Route exact path="/" element={<HomePage />}></Route>
-              <Route></Route>
-              <Route></Route>
-              <Route></Route>
+              <Route exact path="/about-me" element={<AboutPage />}></Route>
+              <Route exact path="/projects" element={<ProjectPage />}></Route>
+              <Route exact path="/exp" element={<ExpPage />}></Route>
             </Routes>
           </div>
         </div>
