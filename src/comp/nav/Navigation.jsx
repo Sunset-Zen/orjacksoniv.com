@@ -24,12 +24,7 @@ const Navigation = () => {
   // Hooks
   // JSX
   return (
-    <Flex
-      zIndex="5"
-      className="nav container"
-      pos="absolute"
-      // border="1px solid white"
-    >
+    <Flex zIndex="5" className="nav" pos="absolute">
       <Link href="/">
         <Box id="nav-logo" objectFit="cover">
           <Image src={img1} />
@@ -61,7 +56,17 @@ const Navigation = () => {
       </Flex>
 
       {/* Mobile Nav */}
-      <SideMenu />
+      <Box
+        // border="1px solid yellow"
+        display="grid"
+        alignItems="center"
+        pos="absolute"
+        top="15%"
+        left="84%"
+        paddingTop="40px"
+      >
+        <SideMenu />
+      </Box>
     </Flex>
     // </Container>
   );

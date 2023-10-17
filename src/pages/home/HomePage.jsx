@@ -36,7 +36,7 @@ const HomePage = () => {
   // JSX
   return (
     // <Container>
-    <Stack className="Homepage" gap={0} overflow="hidden">
+    <Stack className="Homepage" gap={0}>
       <Stack gap={0}>
         {/* Hero Section */}
         <Box id="hero" color="white">

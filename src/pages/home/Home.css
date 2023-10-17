@@ -6,7 +6,7 @@ html {
   background: linear-gradient(to bottom, #000000, #1d1720);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  width: auto;
+  width: 100%;
 
   scroll-behavior: smooth;
   overflow-y: hidden;
@@ -18,7 +18,7 @@ html {
 
 /* ID's */
 #hero {
-  width: 100%;
+  /* width: 100%; */
   height: 1076px;
   z-index: 1;
   background: url("../../assets/img/pexels-а.jpg");
@@ -26,6 +26,7 @@ html {
   background-position: center;
   background-size: cover;
   object-fit: contain;
+  overflow: hidden;
 }
 #pitch {
   height: 850px;
@@ -51,9 +52,18 @@ html {
 }
 
 /* Responsive Design */
-@media only screen and (max-width: 600px) and (min-width: 390px) {
+@media (min-width: 390px) and (max-width: 414px) {
   .Homepage {
     height: 1730px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-left: 0.5rem; */
+    /* padding-right: 0.5rem; */
+
+    min-width: 390px;
+    max-width: 414px;
+    /* border: 1px solid red; */
   }
   .pitch-text {
     position: relative;
@@ -80,6 +90,8 @@ html {
     display: flex;
     flex-direction: column;
     place-items: flex-start;
+
+    width: 100%;
     height: 800px;
     /* border: 1px solid white; */
     overflow: hidden;
@@ -137,7 +149,7 @@ html {
   }
 } /* Phones */
 
-@media only screen and (min-width: 600px) {
+@media (min-width: 600px) {
   .container {
     width: 100%;
     margin-left: auto;
@@ -157,7 +169,7 @@ html {
     overflow: hidden;
   }
 } /* Tablets */
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .container {
     width: 100%;
     margin-left: auto;
@@ -168,7 +180,7 @@ html {
     max-width: 768px;
   }
 } /* Large Tablets */
-@media only screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .container {
     width: 100%;
     margin-left: auto;
@@ -179,7 +191,7 @@ html {
     max-width: 992px;
   }
 } /* Laptops */
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   .container {
     width: 100%;
     margin-left: auto;

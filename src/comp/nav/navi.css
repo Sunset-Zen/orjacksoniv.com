@@ -8,17 +8,70 @@
 .nav-links {
   font-family: "Inria Sans", "sans-serif";
 }
+.side-menu-link {
+  opacity: 90%;
+}
 
 /* ID's */
-#toggle {
-  position: relative;
-  left: 90%;
+#toggle-box {
+  display: grid;
+  align-items: center;
+  justify-self: flex-end;
+}
+#side-menu-header {
+  /* font-weight: 500; */
+  font-family: "Inria Sans", sans-serif;
+  filter: drop-shadow(0 0 2em #e9462e);
+  text-shadow: 0px 0px 5px #e9462e;
 }
 
 /* Responsive Design */
-@media (max-width: 600px) {
+@media (min-width: 375px) {
   .nav {
-    padding-top: 45px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+
+    max-width: 375px;
+    /* border: 1px solid red; */
+  }
+  .side-menu-link {
+    font-size: larger;
+    font-weight: 200;
+  }
+
+  #dev-nav {
+    display: none;
+  }
+  #nav-logo {
+    width: 50px;
+    margin-left: 10px;
+    margin-top: 40px;
+  }
+  #toggle-box {
+    justify-self: flex-end;
+    /* border: 1px solid red; */
+    display: grid;
+    align-items: center;
+  }
+  #toggle {
+  }
+} /* Phones */
+
+@media (min-width: 390px) and (max-width: 414px) {
+  .nav {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+
+    min-width: 390px;
+    max-width: 414px;
+    padding-top: 40px;
+    /* border: 1px solid red; */
   }
   #dev-nav {
     display: none;
@@ -26,13 +79,20 @@
   #nav-logo {
     width: 50px;
     margin-left: 10px;
+    margin-top: 0px;
+  }
+  #toggle-box {
+    /* justify-self: flex-end; */
+    /* border: 1px solid red; */
+    display: grid;
+    align-items: center;
   }
   #toggle {
-    position: relative;
-    left: 80%;
   }
+} /* Phones */
 
-  .container {
+@media (min-width: 600px) {
+  .nav {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -40,30 +100,18 @@
     padding-right: 0.5rem;
 
     max-width: 600px;
+    border: 1px solid red;
   }
-} /* Phones */
-
-@media (min-width: 600px) {
   #toggle {
     display: none;
   }
   #dev-nav {
     visibility: visible;
   }
-
-  .container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-
-    max-width: 600px;
-  }
 } /* Tablets */
 
 @media (min-width: 768px) {
-  .container {
+  .nav {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -75,7 +123,7 @@
 } /* Large Tablets */
 
 @media (min-width: 992px) {
-  .container {
+  .nav {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -89,6 +137,14 @@
 @media (min-width: 1200px) {
   .nav {
     /* border: 1px solid white; */
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+
+    max-width: 1200px;
+    border: 1px solid red;
   }
 
   #nav-logo {
@@ -105,7 +161,7 @@
 
     gap: 40px;
   }
-  .container {
+  /* .container {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -113,5 +169,5 @@
     padding-right: 0.5rem;
 
     max-width: 1200px;
-  }
+  } */
 } /* Large Laptops */

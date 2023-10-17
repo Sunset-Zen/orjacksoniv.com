@@ -35,12 +35,20 @@ html {
 }
 
 /* Responsive */
-@media only screen and (max-width: 600px) {
+@media (min-width: 375px) and (max-width: 414px) {
   .Footer {
     display: flex;
     flex-direction: column;
     height: 300px;
     padding-top: 10%;
+
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+
+    max-width: 390px;
     /* border: 1px solid white; */
   }
   .ext-links {

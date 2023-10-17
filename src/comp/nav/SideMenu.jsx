@@ -40,15 +40,13 @@ function SideMenu() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <Box width="100%" height="10%" pos="relative">
+    <Box id="toggle-box" display="flex">
       <IconButton
         variant="unstyled"
         onClick={onOpen}
         icon={<ToggleIcon />}
         color="white"
         zIndex="3"
-        pos="relative"
-        left="80%"
         id="toggle"
       />
       <Drawer placement="right" onClose={onClose} isOpen={isOpen}>
@@ -57,43 +55,43 @@ function SideMenu() {
           id="side-bg"
           background="linear-gradient(to top, black, #1d1720)"
           paddingTop="7%"
-          borderLeft="2px solid #E7553F"
+          // borderLeft="2px solid #D95810"
         >
           <DrawerHeader>
-            <Heading as="h2" size="xl" color="white">
+            <Heading id="side-menu-header" as="h2" size="xl" color="white">
               <i>Otis Jackson IV</i>
             </Heading>
           </DrawerHeader>
 
-          <DrawerBody color="white">
-            <List spacing={3}>
+          <DrawerBody color="white" overflow="hidden">
+            <List spacing={5} marginTop="30px" borderLeft="1px solid whhite">
               <ListItem>
-                <ListIcon as={HiHome} />
-                <Link href="/" width="100%">
+                {/* <ListIcon as={HiHome} /> */}
+                <Link href="/" width="100%" className="side-menu-link">
                   <i>
                     <b>Home</b>
                   </i>
                 </Link>
               </ListItem>
               <ListItem>
-                <ListIcon as={PiUserCircleFill} />
-                <Link href="/about-me">
+                {/* <ListIcon as={PiUserCircleFill} /> */}
+                <Link href="/about-me" className="side-menu-link">
                   <i>
                     <b>About Me</b>
                   </i>
                 </Link>
               </ListItem>
               <ListItem>
-                <ListIcon as={SiBuildkite} />
-                <Link href="/projects">
+                {/* <ListIcon as={SiBuildkite} /> */}
+                <Link href="/projects" className="side-menu-link">
                   <i>
                     <b>Projects</b>
                   </i>
                 </Link>
               </ListItem>
               <ListItem>
-                <ListIcon as={MdWorkspacesFilled} />
-                <Link href="/exp">
+                {/* <ListIcon as={MdWorkspacesFilled} /> */}
+                <Link href="/exp" className="side-menu-link">
                   <i>
                     <b>Experience</b>
                   </i>
@@ -109,25 +107,32 @@ function SideMenu() {
               marginTop="50%"
               padding={2}
             >
-              <Box
+              {/* <Box
                 w={4}
                 h={4}
-                background="white"
+                background="#D5785B"
                 borderRadius="100%"
                 pos="relative"
                 left={2}
-              ></Box>
-              <Box w={40} h={40} objectFit="cover">
+              ></Box> */}
+              <Box
+                w={40}
+                h={40}
+                objectFit="cover"
+                opacity="10%"
+                transform="scale(2.5)"
+              >
                 <Image src={logo} />
               </Box>
-              <Box
+              {/*   filter: drop-shadow(0 0 2em #e9462e); */}
+              {/* <Box
                 w={4}
                 h={4}
-                background="white"
+                background="#D5785B"
                 borderRadius="100%"
                 pos="relative"
                 right={2}
-              ></Box>
+              ></Box> */}
             </HStack>
           </DrawerBody>
         </DrawerContent>
