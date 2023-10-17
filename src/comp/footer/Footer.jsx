@@ -86,14 +86,18 @@ const Footer = () => {
           </Link>
           <List>
             <ListItem>
-              <Text className="sub-link">
-                <i>Skillset</i>
-              </Text>
+              <Link href="/about-me/#skill-section">
+                <Text className="sub-link">
+                  <i>Skillset</i>
+                </Text>
+              </Link>
             </ListItem>
             <ListItem>
-              <Text className="sub-link">
-                <i>Education</i>
-              </Text>
+              <Link href="/about-me/#education-section">
+                <Text className="sub-link">
+                  <i>Education</i>
+                </Text>
+              </Link>
             </ListItem>
           </List>
         </Stack>
@@ -105,14 +109,18 @@ const Footer = () => {
           </Link>
           <List>
             <ListItem>
-              <Text className="sub-link">
-                <i>Active</i>
-              </Text>
+              <Link>
+                <Text className="sub-link">
+                  <i>Active</i>
+                </Text>
+              </Link>
             </ListItem>
             <ListItem>
-              <Text className="sub-link">
-                <i>Developed</i>
-              </Text>
+              <Link>
+                <Text className="sub-link">
+                  <i>Developed</i>
+                </Text>
+              </Link>
             </ListItem>
           </List>
         </Stack>
