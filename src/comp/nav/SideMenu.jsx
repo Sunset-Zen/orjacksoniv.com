@@ -31,7 +31,10 @@ import logo from "../../assets/img/O-Logo(Edition Pearl) copy.0bdcfc8ee8147103e7
 import { useDisclosure } from "@chakra-ui/react";
 import ToggleIcon from "./icons/ToggleIcon";
 import "./navi.css";
-// import { log } from "console";
+import { HiHome } from "react-icons/hi";
+import { PiUserCircleFill } from "react-icons/pi";
+import { SiBuildkite } from "react-icons/si";
+import { MdWorkspacesFilled } from "react-icons/md";
 
 function SideMenu() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -54,30 +57,47 @@ function SideMenu() {
           id="side-bg"
           background="linear-gradient(to top, black, #1d1720)"
           paddingTop="7%"
-          borderLeft="1px solid #E9462E"
+          borderLeft="2px solid #E7553F"
         >
-          <DrawerHeader borderBottomWidth="1px" borderBottomColor="white">
-            <Heading color="white">
+          <DrawerHeader>
+            <Heading as="h2" size="xl" color="white">
               <i>Otis Jackson IV</i>
             </Heading>
           </DrawerHeader>
+
           <DrawerBody color="white">
             <List spacing={3}>
               <ListItem>
-                <ListIcon />
-                <Link href="/">Home</Link>
+                <ListIcon as={HiHome} />
+                <Link href="/" width="100%">
+                  <i>
+                    <b>Home</b>
+                  </i>
+                </Link>
               </ListItem>
               <ListItem>
-                <ListIcon />
-                <Link href="/about-me">About Me</Link>
+                <ListIcon as={PiUserCircleFill} />
+                <Link href="/about-me">
+                  <i>
+                    <b>About Me</b>
+                  </i>
+                </Link>
               </ListItem>
               <ListItem>
-                <ListIcon />
-                <Link href="/projects">Projects</Link>
+                <ListIcon as={SiBuildkite} />
+                <Link href="/projects">
+                  <i>
+                    <b>Projects</b>
+                  </i>
+                </Link>
               </ListItem>
               <ListItem>
-                <ListIcon />
-                <Link href="/exp">Experience</Link>
+                <ListIcon as={MdWorkspacesFilled} />
+                <Link href="/exp">
+                  <i>
+                    <b>Experience</b>
+                  </i>
+                </Link>
               </ListItem>
             </List>
 
@@ -86,7 +106,7 @@ function SideMenu() {
               pos="relative"
               display="flex"
               justifyContent="center"
-              marginTop="70%"
+              marginTop="50%"
               padding={2}
             >
               <Box

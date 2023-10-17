@@ -7,16 +7,20 @@ import ProjectPage from "./pages/project/Projectpage";
 import ExpPage from "./pages/experience/Exppage";
 import "./App.css";
 
+import Navigation from "./comp/nav/Navigation";
+
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   // Attributes || Hook(s)
-  const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
+
   // JSX
   return (
     <>
       <Router>
         <div>
+          <Navigation />
           <div>
             <Routes>
               <Route exact path="/" element={<HomePage />}></Route>

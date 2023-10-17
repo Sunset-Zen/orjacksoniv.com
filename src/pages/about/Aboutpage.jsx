@@ -16,6 +16,7 @@ import {
 } from "@chakra-ui/react";
 
 import Navigation from "../../comp/nav/Navigation";
+import Footer from "../../comp/footer/Footer";
 
 const Aboutpage = () => {
   // Attributes
@@ -26,8 +27,10 @@ const Aboutpage = () => {
       background="linear-gradient(to top, black, #1d1720)"
       color="white"
     >
-      <Navigation />
-      <Text>About Me</Text>
+      {/* Content Body */}
+      <Stack>{/* <Heading>About me</Heading> */}</Stack>
+      {/* Footer */}
+      <Footer />
     </Stack>
   );
 };

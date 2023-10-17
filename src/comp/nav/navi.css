@@ -1,12 +1,12 @@
 /* Classes */
 .nav {
   color: aliceblue;
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   flex-direction: row;
-  /* border: 1px solid white; */
-  padding-top: 45px;
-  padding-left: 15px;
+}
+.nav-links {
+  font-family: "Inria Sans", "sans-serif";
 }
 
 /* ID's */
@@ -16,31 +16,102 @@
 }
 
 /* Responsive Design */
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
   .nav {
     padding-top: 45px;
-    padding-left: 15px;
+  }
+  #dev-nav {
+    display: none;
+  }
+  #nav-logo {
+    width: 50px;
+    margin-left: 10px;
   }
   #toggle {
     position: relative;
-    left: 85%;
+    left: 80%;
   }
-  #side-bg {
-    background: linear-gradient(to top, black, #1d1720);
+
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+
+    max-width: 600px;
   }
 } /* Phones */
 
-@media only screen and (min-width: 600px) {
+@media (min-width: 600px) {
   #toggle {
     display: none;
   }
+  #dev-nav {
+    visibility: visible;
+  }
+
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+
+    max-width: 600px;
+  }
 } /* Tablets */
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+
+    max-width: 768px;
+  }
 } /* Large Tablets */
 
-@media only screen and (min-width: 992px) {
+@media (min-width: 992px) {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+
+    max-width: 992px;
+  }
 } /* Laptops */
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
+  .nav {
+    /* border: 1px solid white; */
+  }
+
+  #nav-logo {
+    width: 60px;
+    margin-left: 101px;
+    margin-top: 58px;
+  }
+  #dev-nav {
+    /* border: 1px solid white; */
+    width: 100%;
+    align-self: center;
+    justify-self: flex-end;
+    margin-left: 20%;
+
+    gap: 40px;
+  }
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+
+    max-width: 1200px;
+  }
 } /* Large Laptops */

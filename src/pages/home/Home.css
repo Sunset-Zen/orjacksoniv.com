@@ -3,12 +3,17 @@ html {
 }
 /* Classes */
 .Homepage {
-  background: linear-gradient(to top, #000000, #1d1720);
+  background: linear-gradient(to bottom, #000000, #1d1720);
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: auto;
 
   scroll-behavior: smooth;
+  overflow-y: hidden;
+}
+.pitch-text {
+  color: white;
+  opacity: 70%;
 }
 
 /* ID's */
@@ -16,14 +21,23 @@ html {
   width: 100%;
   height: 1076px;
   z-index: 1;
+  background: url("../../assets/img/pexels-а.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  object-fit: contain;
 }
 #pitch {
   height: 850px;
   z-index: 1;
 }
+#pitch-heading {
+  filter: drop-shadow(0 0 2em #e9462e);
+  text-shadow: 0px 0px 5px #e9462e;
+}
 #bg {
   z-index: 0;
-  height: 1076px;
+  /* height: 1076px; */
   object-fit: cover;
   overflow: hidden;
 }
@@ -37,53 +51,154 @@ html {
 }
 
 /* Responsive Design */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) and (min-width: 390px) {
   .Homepage {
-    height: 1712px;
+    height: 1730px;
+  }
+  .pitch-text {
+    position: relative;
+    font-weight: 500;
+    font-family: "Inria Sans", sans-serif;
+  }
+  #pitch-logo {
+    opacity: 4%;
+    position: relative;
+    bottom: 400px;
+    z-index: 0;
+  }
+  #side-banner {
+    position: absolute;
+    top: 46.2%;
+    background: linear-gradient(to top, #e9462e, #aa1e5d, #630531, #2c202d);
+    width: 5px;
+    z-index: 3;
+    height: 53.68%;
   }
 
-  #bg > * {
-    transform: scale(1.35);
-    position: relative;
-    left: 10%;
-  }
+  /* hero section */
   #hero {
     display: flex;
     flex-direction: column;
     place-items: flex-start;
-    height: 720px;
+    height: 800px;
     /* border: 1px solid white; */
     overflow: hidden;
   }
   #hero-logo {
     transform: scale(0.5);
     position: relative;
-    top: 130px;
+    top: 220px;
     left: 80px;
   }
   #hero-logo-c {
     object-fit: contain;
     /* border: 1px solid red; */
   }
+
+  /* pitch section */
   #pitch {
+    margin-top: 100px;
     height: 425px;
   }
+  #pitch-heading {
+    font-size: 40;
+    font-weight: 900;
+    filter: drop-shadow(0 0 2em #e9462e);
+    text-shadow: 0px 0px 5px #e9462e;
+
+    font-family: "Inter", "sans-serif";
+  }
+  #pitch-subheading {
+    margin-bottom: 5%;
+    font-family: "Inria Sans", sans-serif;
+    opacity: 80%;
+  }
+  #pitch-outro {
+    position: relative;
+
+    margin-top: 20%;
+    margin-left: 40%;
+    font-size: larger;
+  }
   #hero-cnt1 {
-    margin-top: 30%;
+    /* margin-top: 30%; */
+    margin-top: 445px;
+    z-index: 5;
   }
   #hero-cnt2 {
-    margin-top: 77%;
+    margin-top: 625px;
     position: absolute;
   }
   #transition {
     left: 180px;
   }
+  #home-container {
+    margin-top: 80px;
+  }
 } /* Phones */
+
 @media only screen and (min-width: 600px) {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+
+    max-width: 600px;
+  }
+  /* hero section */
+  #hero {
+    display: flex;
+    flex-direction: column;
+    place-items: flex-start;
+    height: 800px;
+    /* border: 1px solid white; */
+    overflow: hidden;
+  }
 } /* Tablets */
 @media only screen and (min-width: 768px) {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+
+    max-width: 768px;
+  }
 } /* Large Tablets */
 @media only screen and (min-width: 992px) {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+
+    max-width: 992px;
+  }
 } /* Laptops */
 @media only screen and (min-width: 1200px) {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+
+    max-width: 1200px;
+  }
+  #pitch {
+    width: 700px;
+  }
+  #pitch-logo {
+    position: relative;
+    bottom: 200px;
+  }
+  #hero-cnt1 {
+    margin-top: 30%;
+  }
+  #hero-cnt2 {
+  }
 } /* Large Laptops */

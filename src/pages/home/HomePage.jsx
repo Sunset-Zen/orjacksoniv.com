@@ -28,30 +28,25 @@ import Pitch from "./icons/Pitch";
 import { ArrowRightIcon } from "@chakra-ui/icons";
 import { motion } from "framer-motion";
 import pitch from "../../assets/img/Group.png";
+import Footer from "../../comp/footer/Footer";
 
 const HomePage = () => {
   // Hooks
   // Attributes
   // JSX
   return (
-    <Stack className="Homepage">
-      {/* BG Image */}
-      <Box id="bg" pos="absolute">
-        <Image src={bg} />
-      </Box>
-
-      <Navigation />
-
-      <Stack>
+    // <Container>
+    <Stack className="Homepage" gap={0} overflow="hidden">
+      <Stack gap={0}>
         {/* Hero Section */}
         <Box id="hero" color="white">
           <Box id="hero-logo-c" pos="absolute">
-            <Image id="hero-logo" src={logo} opacity="50%" />
+            <Image id="hero-logo" src={logo} opacity="40%" />
           </Box>
 
-          <Stack paddingTop={60} pos="relative">
+          <Stack pos="relative" zIndex={4}>
             {/* id = hero-cnt1 */}
-            <Container id="hero-cnt1" pos="relative">
+            <Container id="hero-cnt1" pos="relative" zIndex={4}>
               <Text>
                 <b>Greetings,</b>
               </Text>
@@ -95,11 +90,6 @@ const HomePage = () => {
                   <IconButton variant="unstyled" icon={<MailIcon />} />
                 </Link>
                 <motion.a href="#pitch" pos="absolute" marginLeft="90%">
-                  {/* <IconButton
-                    id="transition"
-                    variant="unstyled"
-                    icon={<Pitch />}
-                  /> */}
                   <Button id="transition" variant="unstyled">
                     <Image src={pitch} />
                   </Button>
@@ -107,34 +97,49 @@ const HomePage = () => {
               </HStack>
             </Container>
           </Stack>
+          {/* <Image id="bg" src={bg} pos="relative" /> */}
         </Box>
+
+        {/* SideBanner */}
+        <Box id="side-banner"></Box>
 
         {/* Pitch Section */}
         <Box id="pitch" color="white" paddingTop="5%">
           <Container>
-            <Heading marginBottom={2}>
-              <i>My Creative Ambition</i>
+            <Heading id="pitch-heading" marginBottom={2}>
+              <i>
+                <b>My Creative Ambition</b>
+              </i>
             </Heading>
-            <Text fontSize="xl">Real Progress Starts With Innovation</Text>
-            <Text>
-              Welcome I am a computer Science major enrolled in the College of
-              Engineering at Louisiana State University with a primary
-              concentration in Software Development.{" "}
+            <Text id="pitch-subheading" fontSize="xl">
+              Real Progress Starts With Innovation
             </Text>
-            <Text>
-              As an independent creative-minded artist, my aim is to merge
-              concrete creativity with acquired software skills to develop and
-              deliver you truly captivating and awe inspiring software
-              applications.
-            </Text>
-            <Heading>Let's Build Together !!</Heading>
+            <Stack className="pitch-text">
+              <Text>
+                Welcome !! I am a Computer Science major enrolled in the College
+                of Engineering at Louisiana State University with a primary
+                concentration in Software Development.
+              </Text>
+              <Text>
+                As an independent creative-minded artist, my aim is to merge my
+                concrete creative abilities alongside acquired technical
+                software skills to develop and deliver truly captivating awe
+                inspiring software applications.
+              </Text>
+            </Stack>
+            <Heading id="pitch-outro">Let's Build Together !!</Heading>
+            <Image id="pitch-logo" src={logo} opacity="20%" />
             <HStack></HStack>
           </Container>
         </Box>
       </Stack>
 
       {/* Footer */}
+      <Container id="home-container" width="100%" zIndex={5}>
+        <Footer />
+      </Container>
     </Stack>
+    // </Container>
   );
 };
 
