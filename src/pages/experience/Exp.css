@@ -35,12 +35,9 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    /* padding-left: 0.5rem; */
-    /* padding-right: 0.5rem; */
 
     min-width: 390px;
     max-width: 414px;
-    /* border: 1px solid red; */
   }
   .second-display {
     margin-top: 30px;

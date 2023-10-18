@@ -15,6 +15,7 @@ import {
   Text,
   Stack,
   Image,
+  Flex,
   Link,
 } from "@chakra-ui/react";
 
@@ -58,7 +59,7 @@ function SideMenu() {
           // borderLeft="2px solid #D95810"
         >
           {/* SideBanner */}
-          <Box id="aside-banner"></Box>
+          <Box id="sm-side-banner"></Box>
           <DrawerHeader>
             <Heading id="side-menu-header" as="h2" size="xl" color="white">
               <i>Otis Jackson IV</i>
@@ -70,33 +71,77 @@ function SideMenu() {
               <ListItem>
                 {/* <ListIcon as={HiHome} /> */}
                 <Link href="/" width="100%" className="side-menu-link">
-                  <i>
-                    <b>Home</b>
-                  </i>
+                  <Flex display="flex">
+                    <Text>
+                      <i>
+                        <b>Home</b>
+                      </i>
+                    </Text>
+                    <Icon
+                      as={HiHome}
+                      alignSelf="center"
+                      marginLeft="50%"
+                      transform="scale(1.5)"
+                      opacity="50%"
+                    />
+                  </Flex>
                 </Link>
               </ListItem>
               <ListItem>
                 {/* <ListIcon as={PiUserCircleFill} /> */}
                 <Link href="/about-me" className="side-menu-link">
-                  <i>
-                    <b>About Me</b>
-                  </i>
+                  <Flex display="flex">
+                    <Text>
+                      <i>
+                        <b>About Me</b>
+                      </i>
+                    </Text>
+                    <Icon
+                      as={PiUserCircleFill}
+                      alignSelf="center"
+                      marginLeft="38%"
+                      transform="scale(1.5)"
+                      opacity="50%"
+                    />
+                  </Flex>
                 </Link>
               </ListItem>
               <ListItem>
                 {/* <ListIcon as={SiBuildkite} /> */}
                 <Link href="/projects" className="side-menu-link">
-                  <i>
-                    <b>Projects</b>
-                  </i>
+                  <Flex display="flex">
+                    <Text>
+                      <i>
+                        <b>Projects</b>
+                      </i>
+                    </Text>
+                    <Icon
+                      as={SiBuildkite}
+                      alignSelf="center"
+                      marginLeft="42%"
+                      transform="scale(1.5)"
+                      opacity="70%"
+                    />
+                  </Flex>
                 </Link>
               </ListItem>
               <ListItem>
                 {/* <ListIcon as={MdWorkspacesFilled} /> */}
                 <Link href="/exp" className="side-menu-link">
-                  <i>
-                    <b>Experience</b>
-                  </i>
+                  <Flex display="flex">
+                    <Text>
+                      <i>
+                        <b>Experience</b>
+                      </i>
+                    </Text>
+                    <Icon
+                      as={MdWorkspacesFilled}
+                      alignSelf="center"
+                      marginLeft="33%"
+                      transform="scale(1.5)"
+                      opacity="70%"
+                    />
+                  </Flex>
                 </Link>
               </ListItem>
             </List>

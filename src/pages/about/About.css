@@ -40,6 +40,9 @@
 
   filter: drop-shadow(0 0 2em #e9462e);
 }
+#langs {
+  font-family: "Inria Sans" "sans-serif";
+}
 
 /* Animations */
 @keyframes slide {
@@ -93,6 +96,7 @@
   }
   .item {
     gap: 30px;
+    font-family: "Inria Sans";
   }
 
   #aside-banner {
@@ -136,11 +140,13 @@
   #schools {
     gap: 50px;
     margin-bottom: 20px;
+    font-family: "Inria Sans";
   }
   #awards {
     gap: 115px;
     /* border: 1px solid red; */
     margin-bottom: 55px;
+    font-family: "Inria Sans";
   }
   #description {
     width: 90%;

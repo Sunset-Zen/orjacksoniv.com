@@ -175,7 +175,7 @@ const Aboutpage = () => {
               >
                 <b>Tools</b>
               </Text>
-              <Flex>
+              <Flex className="item">
                 <List>
                   <ListItem>
                     <Text>

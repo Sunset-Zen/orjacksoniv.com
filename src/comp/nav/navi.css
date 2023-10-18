@@ -10,6 +10,7 @@
 }
 .side-menu-link {
   opacity: 90%;
+  text-shadow: 0px 0px 5px #e9462e;
 }
 
 /* ID's */
@@ -57,6 +58,14 @@
     align-items: center;
   }
   #toggle {
+  }
+  #sm-side-banner {
+    height: 101%;
+    position: absolute;
+    background: linear-gradient(to top, #e9462e, #aa1e5d, #630531, #2c202d);
+    width: 5px;
+    z-index: 3;
+    bottom: 2px;
   }
 } /* Phones */
 

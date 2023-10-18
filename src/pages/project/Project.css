@@ -24,11 +24,13 @@
 #project-content-container {
   padding-left: 30px;
 }
+#findu-logo {
+}
 
 /* Responsive Design */
 @media only screen and (max-width: 600px) {
   .Projectpage {
-    height: 1990px;
+    height: 4020px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -39,6 +41,16 @@
     max-width: 414px;
     /* border: 1px solid red; */
   }
+  .photo {
+    display: none;
+  }
+  .side-proj {
+    font-size: larger;
+    font-weight: 800;
+    font-family: "Inria Sans";
+    filter: drop-shadow(0 0 2em #e9462e);
+  }
+
   #project-content-container {
     margin-top: 160px;
     padding-top: 10px;
@@ -55,6 +67,57 @@
   }
   #dev-section {
     margin-top: 100px;
+  }
+
+  #current-proj {
+    gap: 90px;
+  }
+
+  #findu-logo {
+    /* border: 1px solid gold; */
+    height: 220px;
+    /* overflow-y: hidden; */
+    position: relative;
+    filter: drop-shadow(0 0 1em #c23761);
+  }
+  #findu-logo > * {
+    /* border: 1px solid green; */
+    width: 90%;
+    position: absolute;
+    transform: scale(1);
+    /* margin-bottom: 400px; */
+    /* right: 10px; */
+  }
+  #findu-photos {
+  }
+
+  #tenb-logo {
+    height: 260px;
+    /* border: 1px solid gold; */
+    /* padding-bottom: 20%; */
+    filter: drop-shadow(0 0 1em #cfc7bb);
+  }
+  #tenb-logo > * {
+    /* border: 1px solid green; */
+    width: 55%;
+    left: 20%;
+    position: absolute;
+    transform: scale(1);
+    margin: 0 0;
+  }
+
+  #dropnote-logo {
+    filter: drop-shadow(0 0 1em #fcefb2);
+  }
+  #dropnote-logo > * {
+    border-radius: 60%;
+    transform: scale(0.6);
+    position: relative;
+    left: 10px;
+  }
+
+  #vcs-projects {
+    margin-top: 90px;
   }
 } /* Phones */
 @media only screen and (min-width: 600px) {
