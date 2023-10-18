@@ -57,6 +57,8 @@ function SideMenu() {
           paddingTop="7%"
           // borderLeft="2px solid #D95810"
         >
+          {/* SideBanner */}
+          <Box id="aside-banner"></Box>
           <DrawerHeader>
             <Heading id="side-menu-header" as="h2" size="xl" color="white">
               <i>Otis Jackson IV</i>

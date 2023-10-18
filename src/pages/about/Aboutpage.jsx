@@ -18,7 +18,7 @@ import {
 
 import Navigation from "../../comp/nav/Navigation";
 import Footer from "../../comp/footer/Footer";
-import { HiHome } from "react-icons/hi";
+import { RiFilePaper2Fill, RiGraduationCapFill } from "react-icons/ri";
 import { PiUserCircleFill } from "react-icons/pi";
 import { SiBuildkite } from "react-icons/si";
 import { MdWorkspacesFilled } from "react-icons/md";
@@ -72,7 +72,10 @@ const Aboutpage = () => {
           <Flex id="skill-list" className="list">
             {/* Dev Languages */}
             <Stack>
-              <Text bgGradient="linear(to-l, #e9462e, #aa205f)" bgClip="text">
+              <Text
+                bgGradient="linear(to-l, #e9462e, #e9462e, #aa205f)"
+                bgClip="text"
+              >
                 <b>Dev Languages</b>
               </Text>
               <Flex className="item" id="langs">
@@ -126,7 +129,10 @@ const Aboutpage = () => {
             </Stack>
             {/* Frameworks */}
             <Stack>
-              <Text bgGradient="linear(to-l, #e9462e, #aa205f)" bgClip="text">
+              <Text
+                bgGradient="linear(to-l, #e9462e, #e9462e, #aa205f)"
+                bgClip="text"
+              >
                 <b>Frameworks</b>
               </Text>
               <Flex className="item" id="frameworks">
@@ -163,7 +169,10 @@ const Aboutpage = () => {
             </Stack>
             {/* Tools */}
             <Stack>
-              <Text bgGradient="linear(to-l, #e9462e, #aa205f)" bgClip="text">
+              <Text
+                bgGradient="linear(to-l, #e9462e, #e9462e, #e9462e, #e9462e, #aa205f)"
+                bgClip="text"
+              >
                 <b>Tools</b>
               </Text>
               <Flex>
@@ -208,7 +217,10 @@ const Aboutpage = () => {
           </Heading>
           <Flex className="list" gap={5}>
             <Stack>
-              <Text bgGradient="linear(to-l, #e9462e, #aa205f)" bgClip="text">
+              <Text
+                bgGradient="linear(to-l, #e9462e, #e9462e, #aa205f)"
+                bgClip="text"
+              >
                 <b>Academic Timeline</b>
               </Text>
 
@@ -247,14 +259,17 @@ const Aboutpage = () => {
                     Grand Prarie to be more specific during my transformative
                     years. I was always passionate and had an academic
                     inclination to strive to be my best in anything I apply
-                    myself to.x
+                    myself to.
                   </i>
                 </Text>
               </Box>
             </Stack>
 
             <Stack>
-              <Text bgGradient="linear(to-l, #e9462e, #aa205f)" bgClip="text">
+              <Text
+                bgGradient="linear(to-l, #e9462e, #e9462e, #aa205f)"
+                bgClip="text"
+              >
                 <b>Awards and Certifications</b>
               </Text>
               {/* Awards */}
@@ -288,43 +303,13 @@ const Aboutpage = () => {
                   </Text>
                 </List>
               </Flex>
-              {/* <List>
-                <ListItem>
-                  <Flex className="date-item">
-                    <Text>
-                      <b>Dean's List</b>
-                    </Text>
-                    <Text className="dates">Spring 2021</Text>
-                  </Flex>
-                </ListItem>
-                <ListItem>
-                  <Flex className="date-item">
-                    <Text>
-                      <b>LSU Black Scholar Award</b>
-                    </Text>
-                    <Text className="dates">Spring 2021</Text>
-                  </Flex>
-                </ListItem>
-                <ListItem>
-                  <Flex className="date-item" display="flex">
-                    <Text>
-                      <b>Dean's List</b>
-                    </Text>
-                    <Box justifySelf="flex-end">
-                      <Text className="dates">Spring 2023</Text>
-                    </Box>
-                  </Flex>
-                </ListItem>
-                <ListItem>
-                  <Flex className="date-item">
-                    <Text>
-                      <b>LSU Black Scholar Award</b>
-                    </Text>
-                    <Text className="dates">Spring 2023</Text>
-                  </Flex>
-                </ListItem>
-              </List> */}
+
+              {/*  */}
             </Stack>
+          </Flex>
+          <Flex id="academ">
+            <Icon as={RiFilePaper2Fill} className="academ-icons" />
+            <Icon as={RiGraduationCapFill} className="academ-icons" />
           </Flex>
         </Stack>
       </Stack>

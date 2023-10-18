@@ -11,11 +11,61 @@
 
   color: aliceblue;
 }
+.exp-sub-title {
+  font-size: 40;
+  font-weight: 900;
+  filter: drop-shadow(0 0 2em #e9462e);
+  text-shadow: 0px 0px 5px #e9462e;
+
+  font-family: "Inter", "sans-serif";
+}
+.summary {
+  font-family: "Inria Sans", "sans-serif";
+}
 
 /* ID's */
+#exp-content-container {
+  padding-left: 30px;
+}
 
 /* Responsive Design */
 @media only screen and (max-width: 600px) {
+  .Exppage {
+    height: 2450px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-left: 0.5rem; */
+    /* padding-right: 0.5rem; */
+
+    min-width: 390px;
+    max-width: 414px;
+    /* border: 1px solid red; */
+  }
+  .second-display {
+    margin-top: 30px;
+  }
+  #exp-content-container {
+    margin-top: 160px;
+    padding-top: 10px;
+  }
+  #exp-icon {
+    position: absolute;
+    margin-left: 60%;
+    transform: scale(4);
+    width: 25px;
+    height: 25px;
+  }
+  #internships {
+    margin-top: 90px;
+  }
+  #oc-jobs {
+    margin-top: 100px;
+  }
+
+  #res {
+    margin-bottom: 70px;
+  }
 } /* Phones */
 @media only screen and (min-width: 600px) {
 } /* Tablets */

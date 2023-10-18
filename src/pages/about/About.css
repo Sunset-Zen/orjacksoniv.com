@@ -18,6 +18,9 @@
 
   font-family: "Inter", "sans-serif";
 }
+#academ {
+  filter: drop-shadow(0 0 2em #e9462e);
+}
 
 /* ID's */
 #about-content-container {
@@ -51,7 +54,7 @@
 /* Responsive Design */
 @media (min-width: 390px) and (max-width: 414px) {
   .Aboutpage {
-    height: 1850px;
+    height: 1990px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -60,6 +63,10 @@
 
     min-width: 390px;
     max-width: 414px;
+    /* border: 1px solid red; */
+  }
+  .academ-icons {
+    transform: scale(5);
     /* border: 1px solid red; */
   }
   .dates {
@@ -108,6 +115,11 @@
     transform: scale(4);
     width: 30px;
     height: 30px;
+  }
+  #academ {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    justify-content: space-evenly;
   }
   #skill-section {
     margin-top: 90px;
